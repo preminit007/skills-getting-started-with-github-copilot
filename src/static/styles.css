@@ -84,15 +84,38 @@ section h3 {
   margin-bottom: 5px;
 }
 
+
 .participants-list ul {
-  list-style-type: circle;
-  margin-left: 15px;
+  list-style-type: none;
+  margin-left: 0;
+  padding-left: 0;
 }
 
-.participants-list li {
-  color: #555;
-  font-size: 0.9em;
+.participants-list-items {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 8px;
+}
+
+.participant-item {
+  background: #e3e7fa;
+  border-radius: 12px;
+  padding: 3px 10px 3px 8px;
   margin-bottom: 3px;
+  display: inline-flex;
+  align-items: center;
+  font-size: 0.95em;
+}
+
+.delete-icon {
+  cursor: pointer;
+  margin-left: 6px;
+  color: #d32f2f;
+  font-size: 1em;
+  transition: color 0.2s;
+}
+.delete-icon:hover {
+  color: #b71c1c;
 }
 
 .form-group {
